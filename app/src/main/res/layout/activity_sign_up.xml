@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imlogo"
+        android:layout_width="281dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/unnamed" />
+
+    <EditText
+        android:id="@+id/edLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Электронная почта"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imlogo"
+        app:layout_constraintStart_toStartOf="@+id/imlogo"
+        app:layout_constraintTop_toBottomOf="@+id/imlogo" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edNickName"
+        app:layout_constraintStart_toStartOf="@+id/edNickName"
+        app:layout_constraintTop_toBottomOf="@+id/edNickName" />
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="247dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="Зарегистрироваться"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <EditText
+        android:id="@+id/edNickName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Никнейм"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edLogin"
+        app:layout_constraintStart_toStartOf="@+id/edLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
